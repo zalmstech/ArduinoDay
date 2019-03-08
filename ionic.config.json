@@ -1,0 +1,7 @@
+{
+  "name": "arduino-day-iot",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

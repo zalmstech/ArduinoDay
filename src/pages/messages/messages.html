@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Messages</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div style='padding-top: 30%' class="container">
+
+    <ion-card>
+
+      <ion-card-content>
+        <ion-item>
+          <ion-label>LED 1</ion-label>
+          <ion-toggle  [(ngModel)]="led1IsOn" (ionChange)="ligarLed()" color="royal" ></ion-toggle>
+        </ion-item>
+        <ion-item>
+          <ion-label>LED 2</ion-label>
+          <ion-toggle  [(ngModel)]="led2IsOn" (ionChange)="ligarLed()" color="royal" ></ion-toggle>
+        </ion-item>    
+      </ion-card-content>
+    
+    </ion-card>
+    
+  </div>
+</ion-content>
