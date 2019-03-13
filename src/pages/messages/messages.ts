@@ -34,7 +34,7 @@ export class MessagesPage {
       let options = new RequestOptions({ headers: headers });
 
       //Rota da API em node
-      let api = 'http://zalmstech.ddns.net:3333/arduinoday/ligarled';
+      let api = 'http://192.168.1.51:3333/arduinoday/ligarled';
       
       //Criação do obj Json que será enviado no body
       let body = JSON.stringify({name:this.usuario,led1IsOn:this.led1IsOn,led2IsOn: this.led2IsOn});

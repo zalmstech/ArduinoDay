@@ -33,12 +33,12 @@ export class MetersPage {
     
     let headers=new Headers({'Content-Type':'application/json'});
     let options = new RequestOptions({ headers: headers });
-    let api =`http://zalmstech.ddns.net:3333?name=${this.usuario}`;
+    let api =`192.168.1.51:3333/arduinoday/pegarleituras?name=${this.usuario}`;
       
     
 
     this._http.get(api,options).toPromise().then((result:any)=>{
-        
+        debugger;
         this.leitura = result;
 
     }).catch( (error) =>{
